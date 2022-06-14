@@ -10,7 +10,10 @@ class AssetsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Assets
         fields = [
+            "category",
             "name",
             "barcode",
+            "serialNumber",
+            "accessory",
             "location",
         ]
